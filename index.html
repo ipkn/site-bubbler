@@ -1,23 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+<h1>
+Bubbler 버블러
+</h1>
+<div>
+<a href="#">
+<span id="download-btn">
+바로 다운로드
+</span>
+</a>
+</div>
+
+<h2>
 안녕하세요, 버블러(Bubbler)입니다!
+</h2>
 버블러는 피곤한 만화가 대신 말풍선을 그리는 프로그램입니다. 만화 원고 위의 대사마다, 간단한 동작으로 훨씬 빠르게, 더 예쁜 말풍선을 만들어 줍니다. Adobe Photoshop(이하 포토샵)의 기본 저장 포맷인 PSD를 지원하며, 운영체제에 상관없이 모든 웹브라우저에서 동작합니다. 포토샵을 실행하지 않아도 버블러를 사용할 수 있습니다.
 
+<h2>
 이런 분에게 좋습니다!
-대사가 말풍선의 한가운데 있어야 만족하는 모든 만화가
-말풍선을 하나하나 그리는 시간이 아까운 모든 만화가
-눈이 침침해져서 짧은 대사의 말풍선을 깜박 안 그리는 나 (joana)
+</h2>
+<ul>
+    <li>
+    대사가 말풍선의 한가운데 있어야 만족하는 모든 만화가
+    </li>
+    <li>
+    말풍선을 하나하나 그리는 시간이 아까운 모든 만화가
+    </li>
+    <li>
+    눈이 침침해져서 짧은 대사의 말풍선을 깜박 안 그리는 나 (joana)
+    </li>
+</ul>
 
-버블러가 하는 일
+<h2>
+버블러가 하는 일 (자세하게)
+</h2>
 래스터화(rasterize)되지 않은 문자 레이어(type layer)의 내용·위치·크기를 읽고, 적당한 크기의 말풍선을 알맞은 위치에 자동으로 그려줍니다. 말풍선은 참조한 문자 레이어와 이름이 같은 모양 레이어(shape layer)로 저장됩니다.
-즉 한 덩어리의 대사를 한 장의 문자 레이어와 한 장의 모양 레이어 세트로 관리할 수 있습니다. 모양 레이어는 벡터이므로, 다른 프로그램으로 말풍선의 색·외곽선·형태 변경이 가능합니다. (포토샵 사용을 권장합니다)
+즉 한 덩어리의 대사를 한 장의 문자 레이어와 한 장의 모양 레이어 세트로 관리할 수 있습니다. 모양 레이어는 벡터이므로, 다른 프로그램으로 말풍선의 색·외곽선·형태 변경이 가능합니다. (네, 그 크고 무겁고 느린 포토샵이요.)
 
+<h2>
 사용상의 주의점
+</h2>
 21세기에 만들어진 PSD 파일만 지원합니다.
 웹 브라우저가 없는 컴퓨터에서는 동작하지 않습니다.
 
+<h2>
 이런 사람이 만들었습니다
-기획, 프로그래밍, 배포, 에브리씽 : ipknHama (하재승) 천재 프로그래머입니다. 애인이 없습니다. http://ipknlab.com
-징징대기, 홍보 : joana (조안나) 피곤한 만화가입니다. 남편이 있습니다. http://anajo.net
+</h2>
+<dl>
+<dt>
+기획, 프로그래밍, 배포, 에브리씽 :
+</dt>
+<dd>
+ipknHama (하재승) 천재 프로그래머입니다. 애인이 없습니다. http://ipknlab.com
+</dd>
+<dt>
+징징대기, 홍보 : 
+</dt>
+<dd>joana (조안나) 피곤한 만화가입니다. 남편이 있습니다. http://anajo.net
+</dd>
+</dl>
 
+<h2>
 기부
-ipknHama가 프로그래밍을 하려면 고기를 먹어야 합니다.
-고기를 보태주세요.
+</h2>
+조금이라도 보태주시면, 기능 개발이 빨라집니다.
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56816770-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    </body>
+</html>
