@@ -302,3 +302,16 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+.subtitle {
+    padding: 15px;
+    background-color:#88bbff;
+}
+
+#width-limiter {
+    width:80%;
+    padding:20px;
+}
+#width-limiter p {
+    padding-left: 15px;
+}
