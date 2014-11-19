@@ -37,15 +37,41 @@ Bubbler
 </div>
 <BR>
 <BR>
-<div style="height:100px; text-align:center">
+<div style=" text-align:center">
+<ul class="download-list">
+<li>
 <a href="#" id="download-win" class="btn">
 바로 다운로드
 </a>
 <h5>Windows 버전</h5>
+</li>
+<li>
 <a href="#" id="download-mac" class="btn">
 바로 다운로드
 </a>
 <h5>Mac 버전</h5>
+</li>
+</ul>
+<div id="usage">
+사용법 설명 준비중입니다.
+</div>
+<div id="donation-request">
+<a href="#donation">
+유용하게 사용하셨다면...
+<h3>기부하기</h3>
+<p>
+기부로 개발자들에게 사랑과 용기를 주세요!
+</p>
+<p>
+나에게 기부해서 마법 소녀가 되어줘!
+</p>
+<p>
+여러분의 기부는 개발자에게 고기가 됩니다.
+</p>
+기부 방법 보기 &#x2192;
+</a>
+
+</div>
 </div>
 
 <div id="first-bottom">
@@ -63,9 +89,11 @@ Bubbler
 버블러는 피곤한 만화가 대신 말풍선을 그려주는 프로그램입니다. 만화 원고의 대사마다, 간단한 동작만으로 더 예쁜 말풍선을 만들어 줍니다. Adobe Photoshop의 기본 저장 포맷인 PSD를 지원하며, 운영체제에 상관없이 웹브라우저를 통해 사용할 수 있습니다. 자체적으로 PSD파일을 읽고 쓰기 때문에, 포토샵을 실행하지 않아도 말풍선 작업을 할 수 있습니다.
 </p>
 
+<a name="donation">
 <h2 class="subtitle">
 기부하기
 </h2>
+</a>
 <p>
 조금이라도 도움을 보태주시면, 기능 개발이 빨라집니다.
 <dl>
@@ -141,7 +169,7 @@ ipknHama (하재승) 천재 프로그래머입니다. 애인을 구한다고 합
 <dt>
 징징대기, 홍보 : 
 </dt>
-<dd>joana (조안나) 피곤한 만화가입니다. 남편이 있습니다. http://anajo.net
+<dd>joana (조안나) 피곤한 만화가입니다. http://anajo.net
 </dd>
 </dl>
 </p>
@@ -164,7 +192,13 @@ ipknHama (하재승) 천재 프로그래머입니다. 애인을 구한다고 합
   ga('send', 'pageview');
 
 $(document).ready(function(){
-    
+    var list = $("#donation-request p");
+    var idx = Math.floor(Math.random()*list.length);
+    for(var i = list.length-1; i >= 0; i --) {
+        if (i != idx)
+            $(list[i]).remove();
+    }
+    $("#donation-request").css("display","inline-block");
 });
 </script>
 <!-- 
