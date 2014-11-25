@@ -21,6 +21,8 @@ textarea {
 html {
     font-size: 1em;
     line-height: 1.4;
+    font-family: "Malgun Gothic", "Apple Gothic"
+
 }
 
 /*
@@ -313,9 +315,10 @@ textarea {
     max-width:1000px;
     padding:20px;
 }
-#width-limiter p {
+#width-limiter .description {
     padding: 0 15px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 dt {
     font-size:1.2em;
@@ -342,7 +345,6 @@ dt {
   -webkit-border-radius: 29;
   -moz-border-radius: 29;
   border-radius: 15px;
-  font-family: Arial;
   color: #ffffff;
   font-size: 25px;
   padding: 20px 40px 20px 40px;
