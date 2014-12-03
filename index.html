@@ -34,19 +34,22 @@ Bubbler
 <h4 style="color:gray; margin-top:0px; ">
 말풍선 자동 생성기, 버블러
 </h4>
+<h4 style="color:gray; margin-top:0px; ">
+현재 버전 <span id="version_info"></span>
+</h4>
 </div>
 <BR>
 <BR>
 <div style=" text-align:center">
 <ul class="download-list">
 <li>
-<a href="static/bbr-win.zip" id="download-win" class="btn">
+<a href="http://bbr-distribute.s3.amazonaws.com/bbr-win.zip" id="download-win" class="btn">
 바로 다운로드
 </a>
 <h5>Windows 버전</h5>
 </li>
 <li>
-<a href="static/bbr.zip" id="download-mac" class="btn">
+<a href="http://bbr-distribute.s3.amazonaws.com/bbr.zip" id="download-mac" class="btn">
 바로 다운로드
 </a>
 <h5>Mac 버전</h5>
@@ -210,6 +213,9 @@ ipknHama 천재 프로그래머입니다. 애인을 구한다고 합니다. ipkn
   ga('send', 'pageview');
 
 $(document).ready(function(){
+    $.get("static/version.txt").done(function(data){
+        $("version_info").text(data);
+    });
     var list = $("#donation-request p");
     var idx = Math.floor(Math.random()*list.length);
     for(var i = list.length-1; i >= 0; i --) {
