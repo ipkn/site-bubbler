@@ -214,7 +214,7 @@ ipknHama 천재 프로그래머입니다. 애인을 구한다고 합니다. ipkn
 
 $(document).ready(function(){
     $.get("static/version.txt").done(function(data){
-        $("version_info").text(data);
+        $("#version_info").text(data);
     });
     var list = $("#donation-request p");
     var idx = Math.floor(Math.random()*list.length);
